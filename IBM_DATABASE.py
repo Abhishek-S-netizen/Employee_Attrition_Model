@@ -46,7 +46,7 @@ def boxplot(df):
     
     # Use distinct colors for boxes
     box_colors = ['#1f77b4', '#d62728']
-    bp = ax.boxplot(data_to_plot, labels=['No Attrition', 'Attrition'], patch_artist=True,
+    bp = ax.boxplot(data_to_plot, tick_labels=['No Attrition', 'Attrition'], patch_artist=True,
                 medianprops=dict(color='white')) # White median line for contrast
 
     for patch, color in zip(bp['boxes'], box_colors):
