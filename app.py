@@ -10,27 +10,6 @@ from PIL import Image
 # Set Streamlit page layout to use the full browser width
 st.set_page_config(layout="wide")
 
-st.markdown("""
-            <style>
-                .stApp {
-                    background-color:rgb(0,0,25);
-                }
-
-                div[data-testid='stToolbar'] {
-                    background-color:white;
-                }
-
-                div[data-testid='stAppDeployButton'] button {
-                    background-color:black;
-                }
-
-                span[data-testid='stMainMenu'] button {
-                    background-color:black;
-                }
-                
-            </style>
-            """,unsafe_allow_html=True)
-
 if "cleaned_df" not in st.session_state:
     st.session_state.cleaned_df = None
 
